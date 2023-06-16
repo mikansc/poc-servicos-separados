@@ -12,11 +12,8 @@ function Warehouses() {
 
   return (
     <div>
-      <ul>
-        {armazens.map((armazem) => {
-          return <li>{armazem.nome}</li>;
-        })}
-      </ul>
+      <WarehouseForm />
+      <WarehouseList list={armazens} />
     </div>
   );
 }

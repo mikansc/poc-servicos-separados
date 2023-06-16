@@ -1,4 +1,4 @@
-import { get } from "./http-service";
+import { get, post } from "./http-service";
 
 export const getAllWarehouses = () => {
   return get("api/armazens");
@@ -9,5 +9,5 @@ export const getWarehouseById = (id) => {
 };
 
 export const createWarehouse = (warehouse) => {
-  return get("api/armazens", warehouse);
+  return post("api/armazens", warehouse);
 };
